@@ -1,6 +1,6 @@
 package kh;
-
-public class Account {
+//오 잘했네요
+public class Account { 
 //Field
 	private static int balance = 1000; // 잔액
 //입금스래드와 출금스래드가 함께 사용할 공유자원이 됨
