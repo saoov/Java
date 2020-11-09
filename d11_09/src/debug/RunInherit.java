@@ -1,0 +1,19 @@
+package debug;
+
+import java.util.*;
+
+public class RunInherit {
+	public static void main(String[] args) {
+		Student st = new Student("È«±æµ¿", 19, '³²', "2017213", "ÄÄ°ø", 3);
+		System.out.println(st); // Breakpoint ¼³Á¤
+		Person p = new Student("È«±æµ¿", 19, '³²', "2017213", "ÄÄ°ø", 3);
+		System.out.println(p); // Breakpoint ¼³Á¤
+		ArrayList<Student> list = new ArrayList<Student>();
+		list.add(new Student("È«±æµ¿", 19, '³²', "2016213", "ÄÄ°ø", 3));
+		list.add(new Student("±è¸»¶Ë", 20, '¿©', "2013123", "»ý¸í", 4));
+		list.add(new Student("±è¼Ò¶Ë", 22, '³²', "2018123", "ÄÄ°ø", 1));
+		System.out.println(list.get(0));
+		System.out.println(list.get(1));
+		System.out.println(list.get(2));
+	}
+}
